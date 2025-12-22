@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="332538d9-2e12-445d-9a33-b9b7c67319b7" name="Changes" comment="Segunda version del proyecto">
+      <change afterPath="$PROJECT_DIR$/../Android/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/.idea/Android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/.idea/caches/deviceStreaming.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Android/ControlVisitas" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Asignación del profesorado_alumnado.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Descripcion y mapa conceptual del proyecto.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Desplazamiento al centro de trabajo.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Exposición del proyecto. Recomendaciones..pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Fechas 2025.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Indice general.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Instrucciones proyecto.docx.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../La idea es crear un programa donde un agente comercial pueda tener registrados sus clientes.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PROPUESTA DE PROYECTO.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentación1.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Propuesta de proyecto firma.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Sin título.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../VISITAS2.xlsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../controlvisitas.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../controlvisitas.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curriculum-vitae.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../curriculum-vitae.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../me dan estas pautas para presentar el proyecto.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nnnnn.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../preguntar a chatgpt.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyecto (Recuperado automáticamente).docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyecto - copia.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyecto(1er borrador).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyecto.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tengo ha hacer un proyecto fin de modulo para DAM.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tengo un backend creado en IntelliIdea que se conecta a una base de datos.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../v530s-07icb_ughmm_es.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../~$eguntar a chatgpt.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../~$oyecto.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../~$rriculum-vitae-cronologico.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../~WRD2108.tmp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ragare6406&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ragare6406/contr_vist.git",
+    "accountId": "f77df133-bbd7-401d-a357-40522ccfcc70"
+  }
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17 (2)" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="33rv44Az3rKatIqbkUZsdpgsLq7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ControlvisitasApplication.executor": "Run",
+    "Maven.controlvisitas [clean].executor": "Run",
+    "Maven.controlvisitas [install].executor": "Run",
+    "Maven.controlvisitas [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ragar/Documentos/DAM/Proyecto/controlvisitas",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ragar\Documentos\DAM\Proyecto\controlvisitas" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ControlvisitasApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="DB_PASSWORD" value="root" />
+        <env name="DB_URL" value="jdbc:mysql://localhost:3306/visitas?createDatabaseIfNotExist=true" />
+        <env name="DB_USER_NAME" value="root" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.rgarcia.controlvisitas.ControlvisitasApplication" />
+      <module name="controlvisitas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rgarcia.controlvisitas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ControlvisitasApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="332538d9-2e12-445d-9a33-b9b7c67319b7" name="Changes" comment="" />
+      <created>1760087811921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760087811921</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Primera version del proyecto">
+      <option name="closed" value="true" />
+      <created>1761078046875</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761078046875</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Segunda version del proyecto">
+      <option name="closed" value="true" />
+      <created>1761589304760</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1761589304760</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Segunda version del proyecto">
+      <option name="closed" value="true" />
+      <created>1761598916027</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761598916027</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primera version del proyecto" />
+    <MESSAGE value="Segunda version del proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Segunda version del proyecto" />
+  </component>
+</project>

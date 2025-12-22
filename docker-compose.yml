@@ -1,0 +1,29 @@
+services:
+  controlvisitas:
+    build: controlvisitas
+    container_name: controlvisitas-app
+    mem_limit: 512m
+    ports:
+      - "8080:8080"
+    #environment:
+     #DB_URL: jdbc:mysql://mysql:3306/visitas?createDatabaseIfNotExist=true&serverTimezone=UTC
+     #DB_USER_NAME: root
+     #DB_PASSWORD: root
+    depends_on:
+      mysql:
+        condition: service_healthy
+    restart: always
+
+  mysql:
+    image: mysql:8.4
+    container_name: controlvisitas-db
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: visitas
+    restart: always
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 10
