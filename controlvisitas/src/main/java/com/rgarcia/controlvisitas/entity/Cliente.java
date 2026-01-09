@@ -33,36 +33,22 @@ public class Cliente {
     private String contacto;
     private String telefono;
 
-    //Relación con "producto"
+    @ManyToMany
+    @JoinTable(
+            name = "cliente_producto",
+            joinColumns = @JoinColumn(name = "cliente_id"),
+            inverseJoinColumns = @JoinColumn(name = "producto_id")
+    )
+    private List<Producto> productos = new ArrayList<>();
+
+    //Relación con "serie"
     @JsonIgnore
-    @OneToMany(mappedBy = "cliente", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL)
     private List<Serie> serie = new ArrayList<>();
 
     //Relacion con "visita"
     @JsonIgnore
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Visita> visita = new ArrayList<>();
-
-
-
-//    public Long getId() {return id;}
-//    public void setId(Long id) {this.id = id;}
-//    public @NotBlank String getEmpresa() {return empresa;}
-//    public void setEmpresa(@NotBlank String empresa) {this.empresa = empresa;}
-//    public @NotBlank String getDireccion() {return direccion;}
-//    public void setDireccion(@NotBlank String direccion) {this.direccion = direccion;}
-//    public @NotBlank String getMunicipio() {return municipio;}
-//    public void setMunicipio(@NotBlank String municipio) {this.municipio = municipio;}
-//    public @Email String getEmail() {return email;}
-//    public void setEmail(@Email String email) {this.email = email;}
-//    public String getContacto() {return contacto;}
-//    public void setContacto(String contacto) {this.contacto = contacto;}
-//    public String getTelefono() {return telefono;}
-//    public void setTelefono(String telefono) {this.telefono = telefono;}
-//    public List<ProductoSerie> getProductoSerie() {return productoSerie;}
-//    public void setProductoSerie(List<ProductoSerie> productoSerie) {this.productoSerie = productoSerie;}
-//    public List<Visita> getVisita() {return visita;}
-//
-//    public void setVisita(List<Visita> visita) {this.visita = visita;}
 
 }

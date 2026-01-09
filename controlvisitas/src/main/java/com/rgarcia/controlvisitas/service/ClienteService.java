@@ -1,11 +1,15 @@
 package com.rgarcia.controlvisitas.service;
 
 import com.rgarcia.controlvisitas.entity.Cliente;
+import com.rgarcia.controlvisitas.entity.Producto;
 import com.rgarcia.controlvisitas.entity.Serie;
 import com.rgarcia.controlvisitas.repository.ClienteRepository;
 import com.rgarcia.controlvisitas.repository.VisitaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -26,8 +30,9 @@ public class ClienteService {
         return cliente;
     }
 
-    public List<Cliente> todosClientes() {
-        return clienteRepo.findAll();
+    public Page<Cliente> todosClientes(@RequestParam(defaultValue = "0") int page,
+                                       @RequestParam(defaultValue = "20") int size) {
+        return clienteRepo.findAll(PageRequest.of(page,size));
     }
 
     public void borrarCliente(Long clienteId) {
@@ -56,6 +61,12 @@ public class ClienteService {
         return cliente.getSerie();
     }
 
+
+    public List<Producto> getProductoByCliente(Long idCliente){
+        Cliente cliente = clienteRepo.findById(idCliente)
+                .orElseThrow(()-> new RuntimeException("Cliente no encontrado"));
+        return cliente.getProductos();
+    }
 
 }
 

@@ -1,9 +1,7 @@
 package com.rgarcia.controlvisitas.entity;
 
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 import java.util.ArrayList;
@@ -26,5 +24,8 @@ public class Producto {
     @JsonIgnoreProperties("producto")
     @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Serie> serie = new ArrayList<>();
+
+    @ManyToMany(mappedBy = "productos")
+    private List<Cliente> clientes = new ArrayList<>();
 
 }

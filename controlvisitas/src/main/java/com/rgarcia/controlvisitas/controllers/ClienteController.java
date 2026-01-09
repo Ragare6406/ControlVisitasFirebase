@@ -1,13 +1,17 @@
 package com.rgarcia.controlvisitas.controllers;
 
 import com.rgarcia.controlvisitas.entity.Cliente;
+import com.rgarcia.controlvisitas.entity.Producto;
 import com.rgarcia.controlvisitas.entity.Serie;
 import com.rgarcia.controlvisitas.entity.Visita;
 import com.rgarcia.controlvisitas.service.ClienteService;
+import com.rgarcia.controlvisitas.service.ProductoService;
 import com.rgarcia.controlvisitas.service.SerieService;
 import com.rgarcia.controlvisitas.service.VisitaService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +28,8 @@ public class ClienteController {
     private VisitaService visitaService;
     @Autowired
     private SerieService serieService;
+    @Autowired
+    private ProductoService productoService;
 
     /**
      * Crear un cliente nuevo
@@ -45,8 +51,9 @@ public class ClienteController {
      * Obtener todos los clientes
      */
     @GetMapping
-    public List<Cliente> listaClientes() {
-        return clienteService.todosClientes();
+    public Page<Cliente> listaClientes(@RequestParam (defaultValue = "0") int page,
+                                       @RequestParam(defaultValue = "20") int size) {
+        return clienteService.todosClientes(page, size);
     }
 
     /**
@@ -67,6 +74,10 @@ public class ClienteController {
         return ResponseEntity.ok(clienteService.getSerieByCliente(id));
     }
 
+    @GetMapping("/{id}/producto")
+    public ResponseEntity<List<Producto>>getProductoByCliente(@PathVariable Long id){
+        return ResponseEntity.ok(clienteService.getProductoByCliente(id));
+    }
 
 
     /**
@@ -128,6 +139,14 @@ public class ClienteController {
         return ResponseEntity.ok(serieService.serieACliente(clienteId, serieId));
     }
 
-
+    /**
+     * Crear una producto en un cliente
+     */
+    @PostMapping("/{clienteId}/producto/{productoId}")
+    public ResponseEntity<Producto> agregarProducto(
+            @PathVariable Long clienteId,
+            @PathVariable Long productoId) {
+        return ResponseEntity.ok(productoService.prodductoToCliente(clienteId, productoId));
+    }
 }
 

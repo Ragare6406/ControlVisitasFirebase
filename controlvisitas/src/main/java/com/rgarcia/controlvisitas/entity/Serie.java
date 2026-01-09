@@ -33,12 +33,12 @@ public class Serie {
     private Date fin_contrato;
 
     @ManyToOne
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "cliente_id", nullable = true)
     private Cliente cliente;
 
     @JsonIgnoreProperties("series")
     @ManyToOne
-    @JoinColumn(name = "producto_id")
+    @JoinColumn(name = "producto_id", nullable = true)
     private Producto producto;
 
 }
