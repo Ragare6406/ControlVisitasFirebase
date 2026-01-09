@@ -1,5 +1,6 @@
 package com.rgarcia.controlvisitas.controllers;
 
+import com.rgarcia.controlvisitas.DTO.ClienteDTO;
 import com.rgarcia.controlvisitas.entity.Cliente;
 import com.rgarcia.controlvisitas.entity.Producto;
 import com.rgarcia.controlvisitas.entity.Serie;
@@ -51,9 +52,21 @@ public class ClienteController {
      * Obtener todos los clientes
      */
     @GetMapping
-    public Page<Cliente> listaClientes(@RequestParam (defaultValue = "0") int page,
-                                       @RequestParam(defaultValue = "20") int size) {
-        return clienteService.todosClientes(page, size);
+    public List<ClienteDTO> listaClientes(@RequestParam (defaultValue = "0") int page,
+                                          @RequestParam(defaultValue = "20") int size) {
+        return clienteService.todosClientes(page, size)
+                .getContent()
+                .stream()
+                .map(c -> new ClienteDTO(
+                        c.getId(),
+                        c.getEmpresa(),
+                        c.getDireccion(),
+                        c.getMunicipio(),
+                        c.getEmail(),
+                        c.getContacto(),
+                        c.getTelefono()
+                ))
+                .toList();
     }
 
     /**
